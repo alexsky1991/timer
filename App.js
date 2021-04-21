@@ -2,11 +2,16 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Timer from './components/timer'
+
 export default function App() {
+
+
+  let lasttime = 1619028393352
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Timer lasttime={lasttime}/>
     </View>
   );
 }
